@@ -55,6 +55,28 @@ def editar():
             comprado[a-1]=input('\nComprado: ')
     porcomprar.sort()
     comprado.sort()
+def remover():
+    global porcomprar,comprado 
+    print('\nQual das listas quer editar:\n\n1 - Por Comprar\n2 - Comprado')
+    e=input('\nEscolha: ')
+    if e=='1':
+        if len(porcomprar)==0:
+            print('\nPor comprar tem 0 Artigos')
+            return
+        if len(porcomprar)>0:
+            print()
+            for i in range(len(porcomprar)):print(f'{i+1} - {porcomprar[i]}')
+            a=eval(input('\nQual dos Artigos quer Remover: '))
+            porcomprar.pop(a-1)
+    if e=='2':
+        if len(comprado)==0:
+            print('\nComprado tem 0 Artigos')
+            return
+        if len(comprado)>0:
+            print()
+            for i in range(len(comprado)):print(f'{i+1} - {comprado[i]}')
+            a=eval(input('\nQual dos Artigos quer Remover: '))
+            comprado.pop(a-1)
 
 
 
