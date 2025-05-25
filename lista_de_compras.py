@@ -17,6 +17,20 @@ def menu():
         if o=='4':listar()
         if o=='5':mover()
         if o=='6':sair()
+def adicionar():
+    global porcomprar,comprado 
+    print('\nA qual das listas quer Adicionar:\n\n1 - Por Comprar\n2 - Comprado')
+    e=input('\nEscolha: ')
+    if e=='1':
+        a=input('\nPor Comprar: ')
+        porcomprar.append(a)
+        print(f'\n{a} foi adicionado a Por Comprar')
+    if e=='2':
+        a=input('\nComprado: ')
+        comprado.append(a)
+        print(f'\n{a} foi adicionado a Comprado')
+    porcomprar.sort()
+    comprado.sort()
 
 
 
