@@ -1,0 +1,19 @@
+
+-------------------------------------------------
+Requisitos funcionais:
+
+Adicionar Artigos
+Remover Artigos
+Editar Artigos
+Listar Artigos das listas Por Comprar,Comprado
+Mover Artigos entre as listas
+-------------------------------------------------
+Requesitos não funcionais:
+
+Guardar as listas de Artigos
+-------------------------------------------------
+Diagrama de casos de uso:
+
+Atores: Qual quer pessoa
+    Tem a abilidade de adicionar,remover,listar,mover,editar
+-------------------------------------------------
