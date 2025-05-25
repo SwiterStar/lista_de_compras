@@ -95,6 +95,32 @@ def listar():
         if len(comprado)>0:
             print()
             for i in range(len(comprado)):print(f'{i+1} - {comprado[i]}')
+def mover():
+    global porcomprar,comprado 
+    print('\nQual das listas quer Editar:\n\n1 - Por Comprar\n2 - Comprado')
+    e=input('\nEscolha: ')
+    if e=='1':
+        if len(porcomprar)==0:
+            print('\nPor comprar tem 0 Artigos')
+            return
+        if len(porcomprar)>0:
+            print()
+            for i in range(len(porcomprar)):print(f'{i+1} - {porcomprar[i]}')
+            a=eval(input('\nQual dos Artigos quer Mover: '))
+            comprado.append(porcomprar[a-1])
+            porcomprar.pop(a-1)
+    if e=='2':
+        if len(comprado)==0:
+            print('\nComprado tem 0 Artigos')
+            return
+        if len(comprado)>0:
+            print()
+            for i in range(len(comprado)):print(f'{i+1} - {comprado[i]}')
+            a=eval(input('\nQual dos Artigos quer Mover: '))
+            porcomprar.append(comprado[a-1])
+            comprado.pop(a-1)
+    porcomprar.sort()
+    comprado.sort()
 
 
 
