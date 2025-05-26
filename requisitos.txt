@@ -17,3 +17,6 @@ Diagrama de casos de uso:
 Atores: Qual quer pessoa
     Tem a abilidade de adicionar,remover,listar,mover,editar
 -------------------------------------------------
+github - https://github.com/SwiterStar/lista_de_compras
+trello - https://trello.com/invite/b/6833b4f9d5b8179d759bb294/ATTI2433181934f27d86bda5c841df79ebd6DEA95EAA/listadecompras
+-------------------------------------------------
